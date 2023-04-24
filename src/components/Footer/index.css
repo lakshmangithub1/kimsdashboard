@@ -1,0 +1,53 @@
+.foot-head {
+    color: #DAA520; 
+
+} 
+
+.li-card {
+    color: #c6caca;
+    
+} 
+
+.unorder-card {
+    margin: 0;
+}
+
+.foot-para1 {
+    color: #76797c; 
+    font-weight: 600;
+    font-size: 16px;
+} 
+
+.foot-para2 {
+    color: #929597;
+} 
+
+.button-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button1 {
+    margin-right: 15px;  
+    background-color: #33a256; 
+    border: 0px solid #33a256; 
+    
+
+} 
+
+.button2, .button1 {
+    border-radius: 5px; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    color: #ffffff; 
+    
+} 
+
+.button2 {
+    background-color: #b07f43; 
+    border: 0px solid #b07f43; 
+
+}
