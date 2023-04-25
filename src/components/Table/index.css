@@ -8,10 +8,31 @@
     background-color: white !;
 } 
 
-.table-li {
+.table-li, .table-li2 {
     list-style: none;
 } 
 
 .un-pa, .table-li {
     margin-bottom: 10px;
+}
+
+.head-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.second-head {
+    font-family: sans-serif; 
+    color: #575a60; 
+    font-weight: 100 !important;
+} 
+
+.sa {
+    display: flex;
+    flex-direction: column; 
+    
+} 
+.table-li2 {
+    margin-bottom: 17px;
 }
