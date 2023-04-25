@@ -1,0 +1,17 @@
+.table-card {
+    align-self: start; 
+    margin-top: 25px; 
+    margin-bottom: 50px;
+} 
+
+.row-bg-color {
+    background-color: white !;
+} 
+
+.table-li {
+    list-style: none;
+} 
+
+.un-pa, .table-li {
+    margin-bottom: 10px;
+}

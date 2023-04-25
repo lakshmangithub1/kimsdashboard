@@ -42,23 +42,25 @@
     font-weight: 100 !important;
 } 
 
-.nav-down {
+.nav-downs {
     background-color: #ffffff; 
     height: 50px; 
     width: 100vw; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 } 
 
 .nav-down-para1 {
     font-size: 14px; 
     margin-left: 35px; 
-    margin-right: 8px;
+    margin-right: 8px; 
+    margin-top: 12px;
 } 
 
 .nav-down-para2 {
     font-size: 14px; 
     margin-left: 8px;
+    margin-top: 12px;
 }

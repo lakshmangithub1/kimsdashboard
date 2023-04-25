@@ -1,3 +1,4 @@
+import DatePicker from '../DatePIcker'
 import './index.css'
 
 const DateDrop = () => {
@@ -5,16 +6,12 @@ const DateDrop = () => {
     <div className='main-drop'> 
       <div className='drops-card'> 
         <p className='label-para'>Date of Counselling</p>
-        <div className='card-drop classic'>
-          <p className='ll'>5th Feb 2020</p>
-        </div>
+        <DatePicker/>
         
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Estimated Date of Admission</p>
-        <div className='card-drop classic'>
-          <p className='ll'>5th Feb 2020</p>
-        </div>
+        <DatePicker/>
         
       </div>
       <div className='drops-card'> 
@@ -62,9 +59,7 @@ const DateDrop = () => {
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Date of Surgery</p>
-        <div className='card-drop classic'>
-          <p className='ll'>5th Feb 2020</p>
-        </div>
+        <DatePicker/>
         
       </div>
       <div className='drops-card'> 
