@@ -1,0 +1,19 @@
+.doc-data-card {
+    width: 100%; 
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 20px;
+} 
+
+.common-card {
+    display: flex;
+    flex-direction: row;
+} 
+
+.first-pa {
+    font-size: 14px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}

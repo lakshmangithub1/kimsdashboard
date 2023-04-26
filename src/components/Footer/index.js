@@ -13,10 +13,7 @@ const Footer = () => {
         </ul> 
         <p className='foot-para1'>Please not that all the above costs are quoted for the stipulated/tentative length of stay. Increase in length of stay or increase in OT time due to clinical complications/comorbidities will elicit additional charges, depending on the complexity of condition / extension of treatment / period.</p> 
         <p className='foot-para2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mote a type specimen book it has survived not only five centuries but also the up into electronic typesetting, remaining essentialy unchanged </p> 
-        <div className='button-card'>
-            <button type='button' className='button1'>Next</button>
-            <button type='button' className='button2'>Cancle</button>
-        </div>
+        
       
     </div>
   )

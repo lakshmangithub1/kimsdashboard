@@ -1,0 +1,48 @@
+.s-para {
+    margin: 0px; 
+    font-size: 15px;  
+    margin-bottom: 4px;
+} 
+
+.h3-head {
+    font-size: 25px;
+    font-weight: bold; 
+    margin-bottom: 5px;
+} 
+
+.h6-para {
+    font-size: 16px; 
+    font-weight: 500; 
+    margin-top: 12px; 
+    margin-bottom: 12px; 
+    
+} 
+
+.h-para {
+    font-size: 16px;
+    font-weight: 600;
+} 
+
+.ro-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.dash-line {
+    background-color: black;
+    width: 200px; 
+    height: 1px;  
+    align-self: flex-end;
+    margin-left: 10px;
+    
+    
+    
+} 
+
+.sign-ro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

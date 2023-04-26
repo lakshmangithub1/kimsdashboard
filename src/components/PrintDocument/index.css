@@ -1,0 +1,25 @@
+.print-card {
+    padding: 35px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 15px;
+}
+
+.doc-main-head {
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bolder;
+    margin-bottom: 10px;
+} 
+
+.print-logo-head {
+    font-size: 28px;
+} 
+
+.print-logo-para {
+    font-size: 20px;
+}

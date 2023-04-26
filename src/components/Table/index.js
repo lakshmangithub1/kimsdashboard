@@ -7,115 +7,135 @@ class BasicExample extends Component {
 
   state = {bill:0, input1: '',input2: '',input3: '',input4: '',input5: '',input6: '',input7: '',input8: '',input9: '', input10: '',input11: ''} 
 
-  onChangeInput = e => { 
-    this.setState({input1:e.target.value});
+  onChangeInput = e => {  
+    
+    this.setState({input1:e.target.value.replace(/\D/g, '')});
+    
+    
 
   } 
 
   onChangeInput2 = e => { 
-    this.setState({input2:e.target.value});
+    this.setState({input2:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput3 = e => { 
-    this.setState({input3:e.target.value});
+    this.setState({input3:e.target.value.replace(/\D/g, '')});
 
   }  
 
   onChangeInput4 = e => { 
-    this.setState({input4:e.target.value});
+    this.setState({input4:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput5 = e => { 
-    this.setState({input5:e.target.value});
+    this.setState({input5:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput6 = e => { 
-    this.setState({input6:e.target.value});
+    this.setState({input6:e.target.value.replace(/\D/g, '')});
 
   }  
 
   onChangeInput7 = e => { 
-    this.setState({input7:e.target.value});
+    this.setState({input7:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput8 = e => { 
-    this.setState({input8:e.target.value});
+    this.setState({input8:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput9 = e => { 
-    this.setState({input9:e.target.value});
+    this.setState({input9:e.target.value.replace(/\D/g, '')});
 
   }  
 
   onChangeInput10 = e => { 
-    this.setState({input10:e.target.value});
+    this.setState({input10:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput11 = e => { 
-    this.setState({input11:e.target.value});
+    this.setState({input11:e.target.value.replace(/\D/g, '')});
 
   } 
 
 
   onChangeInput12 = e => { 
-    this.setState({input12:e.target.value});
+    this.setState({input12:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput13 = e => { 
-    this.setState({input13:e.target.value});
+    this.setState({input13:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput14 = e => { 
-    this.setState({input14:e.target.value});
+    this.setState({input14:e.target.value.replace(/\D/g, '')});
 
   }  
 
   onChangeInput15 = e => { 
-    this.setState({input15:e.target.value});
+    this.setState({input15:e.target.value.replace(/\D/g, '')});
 
   } 
 
   onChangeInput16 = e => { 
-    this.setState({input16:e.target.value});
+    this.setState({input16:e.target.value.replace(/\D/g, '')});
 
   } 
 
 
   addinput1 = e => { 
     const {input1} = this.state
-    if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input1)})))
+    if (e.target.checked) { 
+      if (input1 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input1)})))
+      }
+      
     } 
     else {
-      this.setState((prevState => ({bill: prevState.bill - parseInt(input1)})))
+      this.setState((prevState => ({bill: prevState.bill - parseInt(input1)}))) 
+      this.setState({input1 : ''})
     }
   }
 
   addinput2 = e => { 
     const {input2} = this.state
-    if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input2)})))
+    if (e.target.checked) { 
+
+      if (input2 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input2)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input2)})))
+      this.setState({input2 : ''})
     }
   }
 
   addinput3 = e => { 
     const {input3} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input3)})))
+      if (input3 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input3)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input3)})))
+      this.setState({input3 : ''})
     }
   }
 
@@ -123,20 +143,30 @@ class BasicExample extends Component {
   addinput4 = e => { 
     const {input4} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input4)})))
+      if (input4 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input4)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input4)})))
+      this.setState({input4 : ''})
     }
   }
 
   addinput5 = e => { 
     const {input5} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input5)})))
+      if (input5 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input5)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input5)})))
+      this.setState({input5 : ''})
     }
   }
 
@@ -144,10 +174,15 @@ class BasicExample extends Component {
   addinput6 = e => { 
     const {input6} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input6)})))
+      if (input6 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input6)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input6)})))
+      this.setState({input6 : ''})
     }
   }
 
@@ -155,20 +190,30 @@ class BasicExample extends Component {
   addinput7 = e => { 
     const {input7} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input7)})))
+      if (input7 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input7)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input7)})))
+      this.setState({input7 : ''})
     }
   }
 
   addinput8 = e => { 
     const {input8} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input8)})))
+      if (input8 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input8)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input8)})))
+      this.setState({input8 : ''})
     }
   }
 
@@ -176,10 +221,15 @@ class BasicExample extends Component {
   addinput9 = e => { 
     const {input9} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input9)})))
+      if (input9 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input9)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input9)})))
+      this.setState({input9 : ''})
     }
   }
 
@@ -187,20 +237,30 @@ class BasicExample extends Component {
   addinput10 = e => { 
     const {input10} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input10)})))
+      if (input10 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input10)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input10)})))
+      this.setState({input10 : ''})
     }
   }
 
   addinput11 = e => { 
     const {input11} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input11)})))
+      if (input11 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input11)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input11)})))
+      this.setState({input11 : ''})
     }
   } 
 
@@ -208,20 +268,30 @@ class BasicExample extends Component {
   addinput12 = e => { 
     const {input12} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input12)})))
+      if (input12 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input12)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input12)})))
+      this.setState({input12 : ''})
     }
   }
 
   addinput13 = e => { 
     const {input13} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input13)})))
+      if (input13 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input13)})))
+      }
     } 
     else {
-      this.setState((prevState => ({bill: prevState.bill - parseInt(input13)})))
+      this.setState((prevState => ({bill: prevState.bill - parseInt(input13)}))) 
+      this.setState({input13 : ''})
     }
   }
 
@@ -229,10 +299,15 @@ class BasicExample extends Component {
   addinput14 = e => { 
     const {input14} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input14)})))
+      if (input14 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input14)})))
+      }
     } 
     else {
-      this.setState((prevState => ({bill: prevState.bill - parseInt(input14)})))
+      this.setState((prevState => ({bill: prevState.bill - parseInt(input14)}))) 
+      this.setState({input14 : ''})
     }
   }
 
@@ -240,20 +315,30 @@ class BasicExample extends Component {
   addinput15 = e => { 
     const {input15} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input15)})))
+      if (input15 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input15)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input15)})))
+      this.setState({input15 : ''})
     }
   }
 
   addinput16 = e => { 
     const {input16} = this.state
     if (e.target.checked) {
-      this.setState((prevState => ({bill: prevState.bill + parseInt(input16)})))
+      if (input16 === '') {
+        this.setState((prevState => ({bill: prevState.bill + 0})))
+      } else {
+        this.setState((prevState => ({bill: prevState.bill + parseInt(input16)})))
+      }
     } 
     else {
       this.setState((prevState => ({bill: prevState.bill - parseInt(input16)})))
+      this.setState({input16 : ''})
     }
   }
 
@@ -290,7 +375,7 @@ class BasicExample extends Component {
               </td>
               <td> 
                 <ul>
-                  <li className='table-li'><input type="text" value = {input1} onChange={this.onChangeInput} id="input1"/></li>
+                  <li className='table-li'><input type="text" value = {input1} onChange={this.onChangeInput} id="input1" pattern="[0-9]*"/></li>
                   <li className='table-li'><input type="text" value = {input2} onChange={this.onChangeInput2} id="input2"/></li>
                   <li className='table-li'><input type="text" value = {input3} onChange={this.onChangeInput3} id="input3"/></li>
                 </ul>
