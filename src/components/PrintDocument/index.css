@@ -23,3 +23,35 @@
 .print-logo-para {
     font-size: 20px;
 }
+
+.doc-data-card {
+    width: 100%; 
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 20px;
+} 
+
+.common-card {
+    display: flex;
+    flex-direction: row;
+} 
+
+.first-pa {
+    font-size: 14px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.final-table {
+   margin-top: 20px;
+
+}
+
+.final-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 15px;
+}

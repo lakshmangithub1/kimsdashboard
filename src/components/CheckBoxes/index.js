@@ -4,7 +4,7 @@ import './index.css'
 const CheckBoxes = () => {
   return (
     <div>
-        <form className='form-card'>  
+        <div className='form-card'>  
             {/*<div className='input-bg'>*/}
                 <div className='input-card'>
                     <input type="checkbox" id="medicalmanagment" value="Medical Managment" name="medicalmanagment" 
@@ -27,7 +27,9 @@ const CheckBoxes = () => {
                     <input type="checkbox" id="roomupgrade" value="Room Upgrade" name="roomupgrade" checked/>
                     <label for="roomupgrade">Room Upgrade </label>
                 </div> 
-           {/* </div> */}
+           {/* </div> */} 
+
+         
 
             {/*<div className='input-bg'>*/}
                 <div className='input-card'>
@@ -57,7 +59,7 @@ const CheckBoxes = () => {
             
 
             
-        </form>
+        </div>
     </div>
   )
 }

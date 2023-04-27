@@ -1,46 +1,50 @@
-import DatePicker from '../DatePIcker'
+import { useState } from 'react'
+
 import './index.css'
 
-const DateDrop = () => {
+const DateDrop = () => { 
+
+  const [topInput1, setTopInput1] = useState('')
+  const [topInput2, setTopInput2] = useState('')
+  const [topInput3, setTopInput3] = useState('')
+  const [topInput4, setTopInput4] = useState('')
+  const [topInput5, setTopInput5] = useState('')
+  const [date1, setData1] = useState(); 
+  const [date2, setData2] = useState(); 
+  const [date3, setData3] = useState(); 
+
   return (
     <div className='main-drop'> 
       <div className='drops-card'> 
         <p className='label-para'>Date of Counselling</p>
-        <DatePicker/>
+        <input type="date" onChange={e => setData1(e.target.value)} className="classics"/>
         
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Estimated Date of Admission</p>
-        <DatePicker/>
+        <input type="date" onChange={e => setData2(e.target.value)} className="classics"/>
         
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Token Number</p> 
-        <div className='card-drop classic'>
-          <p className='ll'>5th Feb 2020</p>
-        </div>
+        <input type="text" className='card-drop classic ' value={topInput1} onChange={e => setTopInput1(e.target.value)} />
+        
         
       </div>
       
       <div className='drops-card'> 
         <p className='label-para'>UMR number</p> 
-        <div className='card-drop classic'>
-          <p className='ll'>5th Feb 2020</p>
-        </div>
+        <input type="text" className='card-drop classic ' value={topInput2} onChange={e => setTopInput2(e.target.value)} />
         
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Patient Name</p> 
-        <div className='card-drop classic'>
-          <p className='ll'>Jeet Singh Rajpoot</p>
-        </div>
+        <input type="text" className='card-drop classic ' value={topInput3} onChange={e => setTopInput3(e.target.value)} />
         
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Patient Name</p> 
-        <div className='card-drop classic'>
-          <p className='ll'>Jeet Singh Rajpoot</p>
-        </div>
+        <input type="text" className='card-drop classic ' value={topInput4} onChange={e => setTopInput4(e.target.value)} />
         
       </div>
       <div className='drops-card'> 
@@ -59,7 +63,7 @@ const DateDrop = () => {
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Date of Surgery</p>
-        <DatePicker/>
+        <input type="date" onChange={e => setData3(e.target.value)} className="classics"/>
         
       </div>
       <div className='drops-card'> 
@@ -71,9 +75,7 @@ const DateDrop = () => {
       </div>
       <div className='drops-card'> 
         <p className='label-para'>Length of Stay(Approx)</p> 
-        <div className='card-drop classic'>
-          <p className='ll'>2 Months</p>
-        </div>
+        <input type="text" className='card-drop classic ' value={topInput5} onChange={e => setTopInput5(e.target.value)} />
         
       </div>
       <div className='drops-card'> 
